@@ -20,6 +20,7 @@ jobs:
       
       - name: Commit and push the new file
         run: |
+          git pull
           git add Q1_archive_README.md
           git commit -m "test push de Q1_archive_README.md"
           git push

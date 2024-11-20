@@ -16,7 +16,7 @@ jobs:
       
       - name: Copie README.md
         run: |
-          cat "Maxime Galmant" > Q2_archive_README.md
+          'Maxime Galmant' > Q2_archive_README.md
           date >> Q2_archive_README.md
           ./README.md >> Q2_archive_README.md
           

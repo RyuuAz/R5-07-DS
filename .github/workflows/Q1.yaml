@@ -20,6 +20,6 @@ jobs:
       
       - name: Commit and push the new file
         run: |
-          git add rapport.txt
-          git commit -m "test push de READEME.md"
+          git add Q1_archive_README.md
+          git commit -m "test push de Q1_archive_README.md"
           git push

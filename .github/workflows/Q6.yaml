@@ -18,7 +18,7 @@ jobs:
         run: |
           echo "Maxime Galmant" > Q6_archive_java.txt
           cat ./Q6.java >> Q6_archive_java.txt
-          echo "$(date +"%d-%m-%Y" +"%H-%M-%S)" >> Q6_archive_java.txt
+          echo "$(date +"%d-%m-%Y")" >> Q6_archive_java.txt
           wc -l ./Q6.java >> Q6_archive_java.txt
           wc -m ./Q6.java >> Q6_archive_java.txt
       

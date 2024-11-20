@@ -11,6 +11,6 @@ public class Q6
     System.out.println();
   }
 }
-20-11-2024
+
 12 ./Q6.java
 213 ./Q6.java

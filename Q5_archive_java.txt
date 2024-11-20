@@ -11,4 +11,4 @@ public class Q5
     System.out.println();
   }
 }
-2024-11-20
+20-11-2024

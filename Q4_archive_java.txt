@@ -11,4 +11,4 @@ public class Q4
     System.out.println();
   }
 }
-DATE=20-11-24
+(date +%d-%m-%y)

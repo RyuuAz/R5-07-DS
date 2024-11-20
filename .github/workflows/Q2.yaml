@@ -18,7 +18,7 @@ jobs:
         run: |
           echo "Maxime Galmant" > Q2_archive_README.md
           date >> Q2_archive_README.md
-          echo ./README.md >> Q2_archive_README.md
+          cat ./README.md >> Q2_archive_README.md
           
           
       

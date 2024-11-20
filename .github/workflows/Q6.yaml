@@ -21,7 +21,7 @@ jobs:
           echo "$(date + "%d-%m-%Y-%H%M%S")" >> Q6_archive_java.txt
           wc -l ./Q6.java >> Q6_archive_java.txt
           wc -m ./Q6.java >> Q6_archive_java.txt
-          diff Q6_archive_java.txt ./Q6_archive_java.txt >> Q6_différences.txt
+          diff $(ls Q6_archive_*.txt | tail -n 1) $(ls Q6_archive_*.txt | tail -n 2 | tail -n 1) >> Q6_différences.txt
       
       - name: Commit and push the new file
         run: |

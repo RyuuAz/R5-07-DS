@@ -1,1 +1,27 @@
-
+name: Q5
+run-name: Maxime Galmant Q5
+on: [push]
+permissions:
+ contents: write
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Set up Git user
+        run: |
+          git config --global user.name RyuuAz
+          git config --global user.email max.galmant@gmail.com
+      
+      - name: Copie Q5.java
+        run: |
+          echo "Maxime Galmant" > Q5_archive_java.txt
+          cat ./Q5.java >> Q5_archive_java.txt
+          echo "(date +"%d-%m-%y")" >> Q5_archive_java.txt
+      
+      - name: Commit and push the new file
+        run: |
+          git add Q5_archive_java.txt
+          git commit -m "test push de Q5_archive_java.txt"
+          git push

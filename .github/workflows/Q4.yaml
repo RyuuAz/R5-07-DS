@@ -18,7 +18,7 @@ jobs:
         run: |
           echo "Maxime Galmant" > Q4_archive_java.txt
           cat ./Q4.java >> Q4_archive_java.txt
-          echo "(date +"%d-%m-%y")" >> Q4_archive_java.txt
+          echo "date +"%d-%m-%y"" >> Q4_archive_java.txt
       
       - name: Commit and push the new file
         run: |

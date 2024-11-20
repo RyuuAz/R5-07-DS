@@ -11,4 +11,4 @@ public class Q4
     System.out.println();
   }
 }
-(date +%d-%m-%y)
+20-11-2024

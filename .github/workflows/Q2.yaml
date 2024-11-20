@@ -2,7 +2,7 @@ name: Q2
 run-name: Maxime Galmant Q2
 on: [push]
 permissions:
- contents: write
+ contents: all
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
       
       - name: Copie README.md
         run: |
-          'Maxime Galmant' > Q2_archive_README.md
+          echo "Maxime Galmant" > Q2_archive_README.md
           date >> Q2_archive_README.md
           ./README.md >> Q2_archive_README.md
           

@@ -2,7 +2,7 @@ name: Q2
 run-name: Maxime Galmant Q2
 on: [push]
 permissions:
- contents: all
+ contents: write
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

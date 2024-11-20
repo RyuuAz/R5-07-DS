@@ -1,1 +1,25 @@
-
+name: Q1
+run-name: Maxime Galmant Q1
+on: [push]
+permissions:
+ contents: write
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - name: Set up Git user
+        run: |
+          git config --global user.name RyuuAz
+          git config --global user.email max.galmant@gmail.com
+      
+      - name: Copie README.md
+        run: |
+          cp ./README.md Q1_archive_README.md 
+      
+      - name: Commit and push the new file
+        run: |
+          git add rapport.txt
+          git commit -m "test push de READEME.md"
+          git push

@@ -25,7 +25,6 @@ jobs:
       
       - name: Commit and push the new file
         run: |
-          git pull
           git add Q6_archive_java.txt
           git commit -m "test push de Q6_archive_java.txt"
           git push
